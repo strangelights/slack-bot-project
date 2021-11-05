@@ -1,0 +1,8 @@
+{
+  "verbose": true,
+  "ignore": ["node_modules", "fixtures/*"],
+  "execMap": {
+    "rb": "ruby",
+    "pde": "processing --sketch={{pwd}} --run"
+  }
+}

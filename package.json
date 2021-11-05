@@ -1,0 +1,26 @@
+{
+  "name": "zoom-bot",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Andre Pato <anpato1994@gmail.com>",
+  "description": "A simple helpful robot for your Company",
+  "scripts": {
+    "start": "./bin/hubot -a slack",
+    "dev": " export $(cat .env | xargs) && nodemon hubot -a slack"
+  },
+  "dependencies": {
+    "hubot": "^3.3.2",
+    "hubot-diagnostics": "^1.0.0",
+    "hubot-env": "^0.0.2",
+    "hubot-help": "^1.0.1",
+    "hubot-redis-brain": "^1.0.0",
+    "hubot-rules": "^1.0.0",
+    "hubot-slack": "^4.9.0"
+  },
+  "engines": {
+    "node": "> 4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
