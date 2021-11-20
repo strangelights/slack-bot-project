@@ -1,7 +1,7 @@
 module.exports = function (bot) {
 
 /* Conversational functions */
-    bot.hear(/hello/i, function(msg){
+    bot.respond(/hello/i, function(msg){
         return msg.send('Good day innit!');
     })
 
