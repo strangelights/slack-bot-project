@@ -27,6 +27,7 @@ christmas\
 tabelflip\
 unflip\
 tell me a joke\
+current weather\
 u up \* \
 \
 \*  tag @josh-bot directly
