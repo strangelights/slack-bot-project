@@ -11,3 +11,16 @@
 ## Overview
 
 Starter code has been provided for you. Your task is to implement a slack bot that allows a user to input any number of commands and your bot should reply with the correct information or phrase. This starter code is meant to be used with the following [lab](https://jsd.ga-curriculum.com/docs/unit-1/in-class-lab).
+
+## Example Phrases
+
+hello<br>
+fancy a kebab?<br>
+fancy a pint?<br>
+Hi Hubot! My name is...<br>
+math n + n<br>
+math n - n<br>
+math n * n<br>
+math n / n<br>
+what day is it?<br>
+christmas<br>
