@@ -132,12 +132,23 @@ module.exports = function (bot) {
         const emoticon = '┬─┬ノ( º _ ºノ)';
         return msg.send(emoticon);
     })
-    
-    // JokeAPI
-    bot.hear(/tell me a joke/i, function(msg){
-        let joke = axios.get('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist&type=single')
 
-        return msg.send(joke.joke);
+/* 3rd Party API Functions */    
+    // JokeAPI
+    bot.hear(/tell me a joke/i, async function(msg){
+        let joke = await axios.get('https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist&type=single');
+
+        return msg.send(joke.data.joke);
+    })
+
+    // AccuWeather Current Forecast
+    bot.hear(/weather/i, async function(msg){
+        const API_KEY = '';
+        let weather = await axios.get(`http://dataservice.accuweather.com/currentconditions/v1/348181?apikey=${API_KEY}`);
+        let currentConditions = weather.data[0].WeatherText.toLowerCase();
+        let temperature = weather.data[0].Temperature.Imperial;
+
+        return msg.send(`:thermometer: It's currently ${currentConditions} and ${temperature.Value}° ${temperature.Unit} in Atlanta, GA :thermometer:`);
     })
 
 /* Uptime Status Detector */

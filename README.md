@@ -26,6 +26,7 @@ what day is it?\
 christmas\
 tabelflip\
 unflip\
+tell me a joke\
 u up \* \
 \
 \*  tag @josh-bot directly
