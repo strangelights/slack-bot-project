@@ -14,13 +14,18 @@ Starter code has been provided for you. Your task is to implement a slack bot th
 
 ## Example Phrases
 
-hello<br>
-fancy a kebab?<br>
-fancy a pint?<br>
-Hi Hubot! My name is...<br>
-math n + n<br>
-math n - n<br>
-math n * n<br>
-math n / n<br>
-what day is it?<br>
-christmas<br>
+hello \* \
+hi hubot! my name is... \* \
+fancy a kebab? \* \
+fancy a pint? \* \
+math n + n\
+math n - n\
+math n * n\
+math n / n\
+what day is it?\
+christmas\
+tabelflip\
+unflip\
+u up \* \
+\
+\*  tag @josh-bot directly
