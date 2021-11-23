@@ -142,7 +142,7 @@ module.exports = function (bot) {
     })
 
     // AccuWeather Current Forecast
-    bot.hear(/weather/i, async function(msg){
+    bot.hear(/current weather/i, async function(msg){
         const API_KEY = '';
         let weather = await axios.get(`http://dataservice.accuweather.com/currentconditions/v1/348181?apikey=${API_KEY}`);
         let currentConditions = weather.data[0].WeatherText.toLowerCase();
@@ -160,3 +160,5 @@ module.exports = function (bot) {
         return msg.send(`:thumbsup: Uptime: ${uptime_hr} hour(s) ${uptime_min} minute(s) ${uptime_sec} second(s) :stopwatch:`);
     })
 }
+
+// Trigger new heroku build
