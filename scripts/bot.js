@@ -160,5 +160,3 @@ module.exports = function (bot) {
         return msg.send(`:thumbsup: Uptime: ${uptime_hr} hour(s) ${uptime_min} minute(s) ${uptime_sec} second(s) :stopwatch:`);
     })
 }
-
-// Trigger new heroku build
